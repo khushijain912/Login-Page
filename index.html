@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <img
+        class="background-image"
+        src="E:\Zeus Learning\Login Page - CSS Grid or Flexbox\quantum screen assets\quantum screen assets\header pattern image.png"
+        alt="Background Image"
+      />
+      <img
+        class="logo"
+        src="E:\Zeus Learning\Login Page - CSS Grid or Flexbox\quantum screen assets\quantum screen assets\icons\logo used in header.svg"
+        alt="Logo Image"
+      />
+    </header>
+    <div
+      style="width: 100%; height: 1.5px; background-color: rgb(0, 174, 255)"
+    ></div>
+    <div class="MainBox">
+      <div class="topForm">
+        <img
+          style="cursor: pointer"
+          class="back"
+          src="E:\Zeus Learning\Login Page - CSS Grid or Flexbox\quantum screen assets\icons\back.svg"
+        />
+        <p style="font-size: 18px">Log in with Quantum</p>
+      </div>
+      <form>
+        <label for="District">
+          <input
+            type="radio"
+            id="District"
+            name="institute"
+            value="District"
+          />&nbsp&nbspDistrict
+        </label>
+        <label for="Independent school">
+          <input
+            type="radio"
+            id="Independent school"
+            name="institute"
+            value="Independent school"
+          />&nbsp&nbspIndependent school
+        </label>
+        <p style="color: rgb(126, 123, 123)">State*</p>
+        <div class="select-something">
+          <select class="form-control" name="state" id="stateSel" size="1">
+            <option value="" selected="selected">PLEASE SELECT STATE</option>
+          </select>
+        </div>
+        <p style="color: rgb(126, 123, 123); margin-top: 30px">District*</p>
+        <div class="select-something">
+          <select
+            class="form-control"
+            name="district"
+            id="districtSel"
+            size="1"
+          >
+            <option value="" selected="selected">PLEASE SELECT DISTRICT</option>
+          </select>
+        </div>
+        <div id="user" class="input-box">
+          <span class="icon">
+            <ion-icon name="lock-closed"></ion-icon>
+          </span>
+          <input type="text" placeholder="Username/Email ID*" />
+        </div>
+        <a class="link" href="#">Forgot Username?</a>
+        <div class="input-box">
+          <input type="password" placeholder="Password*" />
+          <i class="fa fa-eye" aria-hidden="true"></i>
+        </div>
+        <a class="link" id="pass" href="#">Forgot Password?</a>
+        <div class="remember-forgot">
+          <label class="checkbox-container"
+            ><input type="checkbox" />&nbspRemember Me</label
+          >
+        </div>
+        <button type="submit">LOG IN</button>
+        <div class="footer-content">
+          <p>
+            <a href="about.html">About</a> |
+            <a href="contact.html">Contact Us</a>
+          </p>
+        </div>
+      </form>
+    </div>
+    <div class="footer">
+      <img
+        style="margin-right: 20px"
+        src="E:\Zeus Learning\Login Page - CSS Grid or Flexbox\quantum screen assets\quantum screen assets\icons\logo used in footer.svg"
+      />
+      <div
+        style="
+          width: 1px;
+          height: 30px;
+          background-color: rgb(146, 143, 143);
+          margin-right: 20px;
+        "
+      ></div>
+      <p>Copyright &copy 2020-2021&nbsp&nbsp&nbsp&nbsp</p>
+      <p style="font-weight: 600">Zeus Systems Pvt. Ltd.&nbsp&nbsp&nbsp&nbsp</p>
+      <p>All rights reserved.</p>
+    </div>
+  </body>
+</html>
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+  integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+  integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+  crossorigin="anonymous"
+></script>
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+  integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+  integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+  crossorigin="anonymous"
+></script>

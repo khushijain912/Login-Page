@@ -1,0 +1,266 @@
+@font-face{
+    src: url("E:/Zeus Learning/Login Page - CSS Grid or Flexbox/quantum screen assets/Quicksand font 1/static/Quicksand-Bold.ttf");
+    src: url("E:/Zeus Learning/Login Page - CSS Grid or Flexbox/quantum screen assets/Quicksand font 1/static/Quicksand-Light.ttf");
+    src: url("E:/Zeus Learning/Login Page - CSS Grid or Flexbox/quantum screen assets/Quicksand font 1/static/Quicksand-Medium.ttf");
+    src: url("E:/Zeus Learning/Login Page - CSS Grid or Flexbox/quantum screen assets/Quicksand font 1/static/Quicksand-Regular.ttf");
+    src: url("E:/Zeus Learning/Login Page - CSS Grid or Flexbox/quantum screen assets/Quicksand font 1/static/Quicksand-SemiBold.ttf");
+    font-family: Quicksand;
+}
+
+body{
+    background-color: rgb(226, 224, 224);
+    margin: 0px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    padding: 0px;
+    font-family: Quicksand;
+}
+header {
+    position: relative;
+}
+.background-image {
+    height: 55px;
+    display: block;
+    width: 100%;
+}
+.logo {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    top: -40px; /* Adjust the top position as needed */
+    left: 15px; /* Adjust the left position as needed */
+}
+.MainBox{
+    padding-left: 30px;
+    width: 450px;
+    height: 490px;
+    border: solid 2px transparent;
+    border-radius: 5px;
+    background-color: white;
+    border-top-color: rgb(0, 174, 255);
+    border-top-width: 5px;
+    margin-top: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.topForm{
+    display: flex;
+    align-items: center;
+}
+.back{
+    width: 25px;
+    height: 25px;
+    margin-right: 97px;
+}
+/* input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #1F7A54; 
+    border-radius: 50%;
+    outline: none;
+    margin-right: 5px;
+}
+input[type="radio"]:checked {
+    background-color: #1F7A54; 
+} */
+input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #1F7A54; /* Green color */
+    border-radius: 50%;
+    outline: none;
+    margin-right: 5px;
+    position: relative;
+}
+
+input[type="radio"]::before {
+    content: '';
+    position: absolute;
+    width: 10px; /* Adjust the size of the inner colored portion */
+    height: 10px; /* Adjust the size of the inner colored portion */
+    background-color: #1F7A54; /* Green color */
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none; /* Initially hide the inner colored portion */
+}
+
+input[type="radio"]:checked::before {
+    display: block; /* Show the inner colored portion when radio is checked */
+}
+
+.checkbox-container {
+    display: inline-flex;
+    align-items: center;
+}
+/* Apply a green background to the checkbox */
+.checkbox-container input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px; /* Adjust the size of the checkbox as needed */
+    height: 20px;
+    border: 2px solid #1F7A54; /* Green color */
+    border-radius: 4px;
+    outline: none;
+    transition: background-color 0.3s;
+}
+
+/* Change the background color when the checkbox is checked */
+.checkbox-container input[type="checkbox"]:checked {
+    background-color: #1F7A54; /* Green color when checked */
+}
+
+/* Style the checkmark (tick) inside the checkbox */
+.checkbox-container input[type="checkbox"]:checked::before {
+    content: '\2713'; /* Unicode checkmark symbol */
+    font-size: 14px; /* Adjust the size of the checkmark */
+    color: #fff; /* White color for the checkmark */
+    position: relative;
+    left: 2px; /* Adjust the position of the checkmark if needed */
+    font-family: Quicksand;
+}
+label {
+    display: inline-flex;
+    align-items: center;
+    color: black; /* Green color */
+    margin-right: 15px;
+}
+form{
+    margin-top: 10px;
+}
+.input-box{
+    position: relative;
+    width: 430px;
+    margin: 30px 0;
+    border-bottom: 1px solid rgb(207, 204, 204);
+}
+input::placeholder{
+    font-family: Quicksand;
+}
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    pointer-events: none;
+    /* transition: .5s; */
+}
+/* .input-box input:focus~label,
+.input-box input:valid~label{
+    top: -5px;
+} */
+.input-box{
+    margin-bottom: 0px;
+}
+#user{
+    margin-top: 45px;
+}
+.link{
+    margin-left: 270px;
+    text-transform: uppercase;
+    color: #1F7A54;
+    text-decoration: none;
+}
+#pass{
+    margin-left: 267px;
+}
+.input-box input{
+    width: 100%;
+    /* height: 50px; */
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+}
+/* .input-box .icon{
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    line-height: 57px;
+} */
+.form-control{
+    border-color: white;
+    border-bottom-color: rgb(207, 204, 204);
+}
+button{
+    text-align: center;
+    width: 200px;
+    height: 35px;
+    background-color: #3FD28B;
+    border-radius: 1px;
+    border-color: transparent;
+    font-family: Quicksand;
+    font-weight: 500;
+    margin-top: 25px;
+    box-shadow: 0px 2px 3px gray;
+    margin-left: 110px;
+    cursor: pointer;
+}
+.select-something{
+    margin-top: -15px;
+    margin-left: -5px;
+}
+/* i{
+    color: #1F7A54;
+    font-size: 50px;
+    text-align: right;
+} */
+.input-box .fa {
+      font-size: 24px; 
+      position: absolute;
+      right: 8px; 
+      top: 50%; 
+      transform: translateY(-65%);
+      color: #1F7A54;
+}
+.footer-content {
+    text-align: center;
+    color: gray;
+    margin-top: 40px;
+    margin-left: -25px;
+}
+
+.footer-content a {
+    text-decoration: none;
+    /* margin: 0 5px; */
+    font-size: 14px;
+    color: #1F7A54; 
+}
+
+.footer-content a:hover {
+    color: #007bff;
+}
+
+.footer {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(187, 184, 184);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(75, 74, 74);
+    margin-bottom: 0px;
+    margin-top: 60px;
+}
+
+.footer img {
+    max-height: 100%; /* Ensure the image doesn't exceed the height of the .footer */
+    margin-right: 10px; /* Add some margin to the right of the image for spacing */
+}
+
+.footer p {
+    margin: 0; /* Remove default margin for <p> elements */
+}
+
